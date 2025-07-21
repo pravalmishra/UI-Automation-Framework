@@ -21,10 +21,10 @@ public class SearchResultsPage {
 		return eleUtil.waitForElementsVisible(searchProducts, 10).size();
 	}
 
-	public void selectProduct(String productName) {
+	public ProductInfoPage selectProduct(String productName) {
 		System.out.println("searching for product: " + productName);
 		eleUtil.waitForElementVisible(By.linkText(productName), 10).click();
-		// return new ProductInfoPage(driver);
+		 return new ProductInfoPage(driver);
 	}
 
 }
