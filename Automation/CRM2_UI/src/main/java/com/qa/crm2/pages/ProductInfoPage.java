@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.qa.crm2.utils.ElementUtil;
+import com.qa.crm2.constants.AppConstants;
+import com.qa.crm2.pages.AddToCartPage;
 
 
 public class ProductInfoPage {
@@ -25,6 +27,9 @@ public class ProductInfoPage {
 		private By images = By.cssSelector("ul.thumbnails img");
 		private By productMetaData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[1]/li");
 		private By productPriceData = By.xpath("(//div[@id='content']//ul[@class='list-unstyled'])[2]/li");
+		private By additem = By.xpath("//input[@name='quantity']");
+		private By addToCartbutton = By.xpath("//button[@id='button-cart']");
+		private By addToCartText= By.xpath("//a[text()='shopping cart']");
 
 		
 		public ProductInfoPage(WebDriver driver) {
@@ -78,6 +83,21 @@ public class ProductInfoPage {
 			System.out.println("product Details: \n" + productMap);
 			return productMap;
 		}
+		
+		 public void increaseItem() {
+			  eleUtil.doSendKeys(additem,"2");
+		  }
+		  
+		  public String addToCart() {
+			  eleUtil.doClick(addToCartbutton);
+		      return eleUtil.waitForElementVisible(addToCartText, AppConstants.SHORT_DEFAUTT_WAIT).getText();
+		 }
+		  
+		 public AddToCartPage clickOnShoppingCart() {
+			 eleUtil.doClick(addToCartText);
+			 //eleUtil.waitForElementVisible(addToCartText, 10).click();
+			return new AddToCartPage(driver);
+		 }
 
 
 }

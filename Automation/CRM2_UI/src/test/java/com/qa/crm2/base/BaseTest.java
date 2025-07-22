@@ -5,9 +5,11 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.asserts.SoftAssert;
 
 import com.qa.crm2.factory.DriverFactory;
 import com.qa.crm2.pages.AccountsPage;
+import com.qa.crm2.pages.AddToCartPage;
 import com.qa.crm2.pages.LoginPage;
 import com.qa.crm2.pages.ProductInfoPage;
 import com.qa.crm2.pages.SearchResultsPage;
@@ -21,6 +23,8 @@ public class BaseTest {
 	protected AccountsPage accPage;
 	protected SearchResultsPage searchResultsPage;
 	protected ProductInfoPage productInfoPage;
+	protected SoftAssert softAssert;
+	protected AddToCartPage addToCartPage;
 	
 	@BeforeTest
 	public void setup(){
@@ -28,6 +32,7 @@ public class BaseTest {
 	  prop = df.initProp();
     driver = df.initDriver(prop);
     loginpage = new LoginPage(driver);
+    softAssert = new SoftAssert();
 	}
 	
 	
