@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.crm2.constants.AppConstants;
 import com.qa.crm2.utils.ElementUtil;
+import com.qa.crm2.pages.RegisterationPage;
+import com.qa.crm2.utils.TimeUtil;
+
+import io.qameta.allure.Step;
 
 
 public class LoginPage {
@@ -55,6 +59,12 @@ public class LoginPage {
 		//return eleUtil.waitForTitleIs("My Account", 5);
 		
 		return new AccountsPage(driver);
+	}
+	
+	
+	public RegisterationPage navigateToRegisterPage() {
+		eleUtil.waitForElementVisible(registerLink, TimeUtil.DEFAULT_LONG_TIME).click();
+		return new RegisterationPage(driver);
 	}
 
 }

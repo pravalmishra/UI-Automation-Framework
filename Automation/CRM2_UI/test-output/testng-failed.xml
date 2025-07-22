@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.crm2.tests.LoginPageTest">
+      <class name="com.qa.crm2.tests.ProductPageInfoTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="forgotPwdLinkExistTest"/>
-          <include name="loginPageUrlTest"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
+          <include name="productInfoTest"/>
+          <include name="infoPageSetup"/>
         </methods>
-      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+      </class> <!-- com.qa.crm2.tests.ProductPageInfoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

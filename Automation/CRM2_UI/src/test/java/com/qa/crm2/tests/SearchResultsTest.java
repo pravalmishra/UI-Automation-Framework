@@ -15,22 +15,22 @@ public class SearchResultsTest extends BaseTest {
 
 	}
 	
-//	@DataProvider
-//	public Object[][] getProductCountData() {
-//		return new Object[][] {
-//			{"macbook", 3},
-//			{"imac", 1},
-//			{"samsung", 2}
-//		};
-//	}
+	@DataProvider
+	public Object[][] getProductCountData() {
+		return new Object[][] {
+			{"macbook", 3},
+			{"imac", 1},
+			{"samsung", 2}
+		};
+	}
 	
 
-//	@Test
-//	public void searchResultsCountTest(String searchKey, int productCount) {
-//		searchResultsPage = accPage.doSearch(searchKey);
-//		Assert.assertEquals(searchResultsPage.getSearchProductCount(), productCount);
-//	}
-//	
+	@Test(dataProvider = "getProductCountData")
+	public void searchResultsCountTest(String searchKey, int productCount) {
+		searchResultsPage = accPage.doSearch(searchKey);
+		Assert.assertEquals(searchResultsPage.getSearchProductCount(), productCount);
+	}
+	
 	@Test
 	public void searchResultsTest() {
 		searchResultsPage = accPage.doSearch("macbook");

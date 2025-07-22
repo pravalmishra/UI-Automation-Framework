@@ -12,6 +12,7 @@ import com.qa.crm2.pages.AccountsPage;
 import com.qa.crm2.pages.AddToCartPage;
 import com.qa.crm2.pages.LoginPage;
 import com.qa.crm2.pages.ProductInfoPage;
+import com.qa.crm2.pages.RegisterationPage;
 import com.qa.crm2.pages.SearchResultsPage;
 
 public class BaseTest {
@@ -25,6 +26,7 @@ public class BaseTest {
 	protected ProductInfoPage productInfoPage;
 	protected SoftAssert softAssert;
 	protected AddToCartPage addToCartPage;
+	protected RegisterationPage registerationPage;
 	
 	@BeforeTest
 	public void setup(){

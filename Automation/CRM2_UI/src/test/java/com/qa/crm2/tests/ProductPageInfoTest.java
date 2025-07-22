@@ -19,20 +19,59 @@ public class ProductPageInfoTest extends BaseTest {
 			accPage = loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		}
 		
-		
-		@Test()
-		public void productHeaderTest() {
-			searchResultsPage = accPage.doSearch("macbook");
-			productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
-			Assert.assertEquals(productInfoPage.getProductHeader(), "MacBook Pro");
+		@DataProvider
+		public Object[][] getProductSearchData() {
+			return new Object[][] {
+				{"macbook", "MacBook Pro"},
+				{"imac", "iMac"},
+				{"samsung", "Samsung SyncMaster 941BW"},
+				{"samsung", "Samsung Galaxy Tab 10.1"},
+
+			};
 		}
 		
-		@Test()
-		public void productImagesCountTest() {
-			searchResultsPage = accPage.doSearch("macbook");
-			productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
-			Assert.assertEquals(productInfoPage.getProductImagesCount(), 4);
+		@Test(dataProvider = "getProductSearchData")
+		public void productHeaderTest(String searchKey, String productName) {
+			searchResultsPage = accPage.doSearch(searchKey);
+			productInfoPage = searchResultsPage.selectProduct(productName);
+			Assert.assertEquals(productInfoPage.getProductHeader(), productName);
 		}
+		
+		
+		@DataProvider
+		public Object[][] getProductImagesData() {
+			return new Object[][] {
+				{"macbook", "MacBook Pro", 4},
+				{"imac", "iMac", 3},
+				{"samsung", "Samsung SyncMaster 941BW", 1},
+				{"samsung", "Samsung Galaxy Tab 10.1", 7},
+
+			};
+		} 
+		
+		@Test(dataProvider = "getProductImagesData")
+		public void productImagesCountTest(String searchKey, String productName, int imagesCount) {
+			searchResultsPage = accPage.doSearch(searchKey);
+			productInfoPage = searchResultsPage.selectProduct(productName);
+			Assert.assertEquals(productInfoPage.getProductImagesCount(), imagesCount);
+		}   
+		
+		
+//		@Test()
+//		public void productHeaderTest() {
+//			searchResultsPage = accPage.doSearch("macbook");
+//			productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
+//			Assert.assertEquals(productInfoPage.getProductHeader(), "MacBook Pro");
+//		}
+//		
+//		@Test()
+//		public void productImagesCountTest() {
+//			searchResultsPage = accPage.doSearch("macbook");
+//			productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
+//			Assert.assertEquals(productInfoPage.getProductImagesCount(), 4);
+//		}
+		
+		
 		
 		@Test
 		public void productInfoTest() {
@@ -47,6 +86,18 @@ public class ProductPageInfoTest extends BaseTest {
 			softAssert.assertAll();
 			
 		}
+		
+		@Test
+		public void addItemTest() {
+			searchResultsPage = accPage.doSearch("macbook");
+			productInfoPage = searchResultsPage.selectProduct("MacBook Pro");
+			productInfoPage.increaseItem();
+			String accVal = productInfoPage.addToCart();
+			System.out.println("Add to cart value :" +accVal);
+			//Assert.assertEquals(accVal, "shopping cart!");
+			//productInfoPage.clickOnShoppingCart();
+		}
+		
 		
 		
 		
