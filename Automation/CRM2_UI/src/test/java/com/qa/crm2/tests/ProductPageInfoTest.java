@@ -8,6 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.crm2.base.BaseTest;
+import com.qa.crm2.constants.AppConstants;
+import com.qa.crm2.utils.ExcelUtil;
 
 public class ProductPageInfoTest extends BaseTest {
 	
@@ -72,6 +74,22 @@ public class ProductPageInfoTest extends BaseTest {
 //		}
 		
 		
+		//******** Read data from excel file ***********//
+		
+		@DataProvider
+		public Object[][] getProductImagesDataFromExcel() {
+			return ExcelUtil.getTestData(AppConstants.PRODUCT_DATA_SHEET_NAME);
+		}
+		
+		@Test(dataProvider = "getProductImagesDataFromExcel")
+		public void productImagesCountTest(String searchKey, String productName, String imagesCount) {
+			searchResultsPage = accPage.doSearch(searchKey);
+			productInfoPage = searchResultsPage.selectProduct(productName);
+			Assert.assertEquals(productInfoPage.getProductImagesCount(), Integer.parseInt(imagesCount));
+			
+		}
+		
+		
 		
 		@Test
 		public void productInfoTest() {
@@ -80,7 +98,7 @@ public class ProductPageInfoTest extends BaseTest {
 			Map<String, String> productActDetailsMap = productInfoPage.getProductDetailsMap();
 			softAssert.assertEquals(productActDetailsMap.get("Brand"), "Apple");
 			softAssert.assertEquals(productActDetailsMap.get("Product Code"), "Product 18");
-			softAssert.assertEquals(productActDetailsMap.get("Availability"), "In Stock");
+			softAssert.assertEquals(productActDetailsMap.get("Availability"), "Out Of Stock");
 			softAssert.assertEquals(productActDetailsMap.get("productprice"), "$2,000.00");
 			softAssert.assertEquals(productActDetailsMap.get("extaxprice"), "$2,000.00");
 			softAssert.assertAll();

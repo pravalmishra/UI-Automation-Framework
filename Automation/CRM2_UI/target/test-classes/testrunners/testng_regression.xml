@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Open Cart Regression Suite" verbose="3" thread-count="3" parallel="tests">
+<suite name="Open Cart Regression Suite" verbose="3" thread-count="6">
 
 
 	<test name="Login Page Test">
 
-
+  
 		<classes>
 			<class name="com.qa.crm2.tests.LoginPageTest" />
 
@@ -15,20 +15,40 @@
 
 
 	<test name="Accounts Page Test">
-
-
-		<classes>
+	  
+       <classes>
 			<class name="com.qa.crm2.tests.AccountsPageTest" />
 		</classes>
 	</test>
 
-	<test name="Search Page Test">
-
-
-		<classes>
+	<test name="Search Results Page Test">
+	    
+       <classes>
 			<class name="com.qa.crm2.tests.SearchResultsTest" />
 		</classes>
 	</test>
+
+	<test name="Product Info Page Test">
+	    
+		<classes>
+			<class name="com.qa.crm2.tests.ProductPageInfoTest" />
+		</classes>
+	</test>
+	
+	<test name="Add To Cart Page Test">
+
+		<classes>
+			<class name="com.qa.crm2.tests.AddToCartPageTest" />
+		</classes>
+	</test>
+
+	<test name="Register Page Test">
+	
+		<classes>
+			<class name="com.qa.crm2.tests.RegPageTest" />
+		</classes>
+	</test>
+
 
 
 </suite>

@@ -19,13 +19,18 @@ public class ExcelUtil {
 	public static Object[][] getTestData(String sheetName) {
 
 		System.out.println("reading test data from sheet : " + sheetName);
+		
+		/* 2 D object array as null */
 
 		Object data[][] = null;
 
 		try {
 			FileInputStream ip = new FileInputStream(TEST_DATA_SHEET_PATH);
-
+			
+			/* create copy of excel file in java memory by using create method and return workbook */
+            /* workbookFactory is class */
 			book = WorkbookFactory.create(ip);
+			/* Return a sheet reference by using getSheet function */
 			sheet = book.getSheet(sheetName);
 
 			data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
