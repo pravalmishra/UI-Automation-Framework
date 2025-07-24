@@ -5,6 +5,8 @@ package com.qa.crm2.factory;
 	import org.openqa.selenium.edge.EdgeOptions;
 	import org.openqa.selenium.firefox.FirefoxOptions;
 
+import com.qa.crm2.logger.Log;
+
     //import com.qa.crm2.logger.Log;
 
 	public class OptionsManager {
@@ -23,11 +25,11 @@ package com.qa.crm2.factory;
 			co = new ChromeOptions();
 			if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
 				System.out.println("Running chrome in headless mode");
-				//Log.info("Running chrome in headless mode");
+				Log.info("Running chrome in headless mode");
 				co.addArguments("--headless");
 			}
 			if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
-				//Log.info("Running chrome in incognito mode");
+				Log.info("Running chrome in incognito mode");
 				System.out.println("Incognito Mode");
 				co.addArguments("--incognito");
 			}

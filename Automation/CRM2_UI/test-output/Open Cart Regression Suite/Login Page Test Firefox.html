@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 24 12:11:58 IST 2025</td>
+<td>Started on:</td><td>Thu Jul 24 19:12:50 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16802 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15247 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,70 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest()'><b>addToCartPageTitleTest</b><br>Test class: com.qa.crm2.tests.AddToCartPageTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because the return value of &quot;com.qa.crm2.utils.ElementUtil.getElement(org.openqa.selenium.By)&quot; is null
-	at com.qa.crm2.utils.ElementUtil.doSendKeys(ElementUtil.java:114)
-	at com.qa.crm2.pages.ProductInfoPage.increaseItem(ProductInfoPage.java:88)
-	at com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest(AddToCartPageTest.java:20)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace450821060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace450821060'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because the return value of &quot;com.qa.crm2.utils.ElementUtil.getElement(org.openqa.selenium.By)&quot; is null
-	at com.qa.crm2.utils.ElementUtil.doSendKeys(ElementUtil.java:114)
-	at com.qa.crm2.pages.ProductInfoPage.increaseItem(ProductInfoPage.java:88)
-	at com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest(AddToCartPageTest.java:20)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>11</td>
-<td>com.qa.crm2.tests.AddToCartPageTest@46c00568</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -142,167 +78,92 @@ function toggleAllBoxes() {
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageHeadersTest()'><b>accPageHeadersTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageTitleTest()'><b>accPageTitleTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageURLTest()'><b>accPageURLTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.addItemTest()'><b>addItemTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest</td>
-<td></td>
-<td>13</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.isLogoutLinkExistTest()'><b>isLogoutLinkExistTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.isMyAccountLinkExistTest()'><b>isMyAccountLinkExistTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageUrlTest()'><b>loginPageUrlTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageUrlTest()'><b>loginPageUrlTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
-<td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro</td>
-<td></td>
-<td>7</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac</td>
-<td></td>
-<td>12</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW</td>
-<td></td>
-<td>6</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1</td>
-<td></td>
-<td>9</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro, 4</td>
-<td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac, 3</td>
-<td></td>
-<td>7</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
 <td></td>
 <td>10</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1, 7</td>
-<td></td>
-<td>7</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro, 4</td>
-<td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac, 3</td>
-<td></td>
-<td>6</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
-<td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1, 7</td>
-<td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: canon, Canon EOS 5D, 3</td>
-<td></td>
-<td>7</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
-<tr>
-<td title='com.qa.crm2.tests.ProductPageInfoTest.productInfoTest()'><b>productInfoTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest</td>
-<td></td>
-<td>6</td>
-<td>com.qa.crm2.tests.ProductPageInfoTest@67a056f1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: macbook, 3</td>
 <td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>5</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: imac, 1</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: samsung, 2</td>
 <td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest</td>
 <td></td>
-<td>3</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>0</td>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 </table><p>
 </body>
 </html>

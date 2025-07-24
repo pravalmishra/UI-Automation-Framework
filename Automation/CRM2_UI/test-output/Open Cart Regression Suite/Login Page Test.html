@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 24 12:11:58 IST 2025</td>
+<td>Started on:</td><td>Thu Jul 24 19:12:50 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>61 seconds (61761 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29508 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,112 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.addItemTest()'><b>addItemTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [790e8866b42e75584e08aafeee7c49cc, clearElement {id=f.A3B6DFD1698691B8A425D1B1F244EE29.d.E1E1B4AF92C335A4CDDFD2DD4FD7165E.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/c6/3l582mb97j5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61996/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (790e8866b42e75584e08aafeee7c49cc)] -&gt; name: search]
+Session ID: 790e8866b42e75584e08aafeee7c49cc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at com.qa.crm2.utils.ElementUtil.doSendKeys(ElementUtil.java:114)
+	at com.qa.crm2.pages.AccountsPage.doSearch(AccountsPage.java:69)
+	at com.qa.crm2.tests.ProductPageInfoTest.addItemTest(ProductPageInfoTest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace256045276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace256045276'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [790e8866b42e75584e08aafeee7c49cc, clearElement {id=f.A3B6DFD1698691B8A425D1B1F244EE29.d.E1E1B4AF92C335A4CDDFD2DD4FD7165E.e.5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: /var/folders/c6/3l582mb97j5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61996/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (790e8866b42e75584e08aafeee7c49cc)] -&gt; name: search]
+Session ID: 790e8866b42e75584e08aafeee7c49cc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at com.qa.crm2.utils.ElementUtil.doSendKeys(ElementUtil.java:114)
+	at com.qa.crm2.pages.AccountsPage.doSearch(AccountsPage.java:69)
+	at com.qa.crm2.tests.ProductPageInfoTest.addItemTest(ProductPageInfoTest.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,92 +184,167 @@ function toggleAllBoxes() {
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageHeadersTest()'><b>accPageHeadersTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageTitleTest()'><b>accPageTitleTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.accPageURLTest()'><b>accPageURLTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest()'><b>addToCartPageTitleTest</b><br>Test class: com.qa.crm2.tests.AddToCartPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.qa.crm2.tests.AddToCartPageTest@2f879bab</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.isLogoutLinkExistTest()'><b>isLogoutLinkExistTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.isMyAccountLinkExistTest()'><b>isMyAccountLinkExistTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageUrlTest()'><b>loginPageUrlTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginPageUrlTest()'><b>loginPageUrlTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.LoginPageTest@5328a9c1</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.LoginPageTest@27068a50</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.crm2.tests.LoginPageTest</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.LoginPageTest@187eb9a8</td></tr>
+<td>10</td>
+<td>com.qa.crm2.tests.LoginPageTest@3605c4d3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro</td>
+<td></td>
+<td>6</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac</td>
+<td></td>
+<td>2</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW</td>
+<td></td>
+<td>2</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro, 4</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1, 7</td>
+<td></td>
+<td>4</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: macbook, MacBook Pro, 4</td>
+<td></td>
+<td>2</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: imac, iMac, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1, 7</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest<br>Parameters: canon, Canon EOS 5D, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
+<tr>
+<td title='com.qa.crm2.tests.ProductPageInfoTest.productInfoTest()'><b>productInfoTest</b><br>Test class: com.qa.crm2.tests.ProductPageInfoTest</td>
+<td></td>
+<td>1</td>
+<td>com.qa.crm2.tests.ProductPageInfoTest@71c905a3</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: macbook, 3</td>
 <td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>5</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: imac, 1</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsCountTest()'><b>searchResultsCountTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest<br>Parameters: samsung, 2</td>
 <td></td>
-<td>4</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.SearchResultsTest.searchResultsTest()'><b>searchResultsTest</b><br>Test class: com.qa.crm2.tests.SearchResultsTest</td>
 <td></td>
-<td>3</td>
-<td>com.qa.crm2.tests.SearchResultsTest@4bdcaf36</td></tr>
+<td>1</td>
+<td>com.qa.crm2.tests.SearchResultsTest@332f25c8</td></tr>
 <tr>
 <td title='com.qa.crm2.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.crm2.tests.AccountsPageTest</td>
 <td></td>
-<td>5</td>
-<td>com.qa.crm2.tests.AccountsPageTest@27f1bbe0</td></tr>
+<td>0</td>
+<td>com.qa.crm2.tests.AccountsPageTest@72805168</td></tr>
 </table><p>
 </body>
 </html>

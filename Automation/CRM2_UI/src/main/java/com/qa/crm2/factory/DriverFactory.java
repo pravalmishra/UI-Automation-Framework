@@ -14,6 +14,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import com.qa.crm2.exceptions.BrowserException;
 import com.qa.crm2.errors.AppError;
 import com.qa.crm2.exceptions.FrameworkException;
+import com.qa.crm2.logger.Log;
 
 public class DriverFactory {
 	 
@@ -26,6 +27,8 @@ public class DriverFactory {
 		
 		String browserName = prop.getProperty("browser");
 		//String browserName = System.getProperty("browser"); /If pass from command line
+		
+		Log.info("Browser name is : " +browserName);
 		highlight = prop.getProperty("highlight");
 		optionsManager = new OptionsManager(prop);
 		switch(browserName.toLowerCase().trim()) {
@@ -48,6 +51,7 @@ public class DriverFactory {
 			
 			default:
 				System.out.println("Please Pass the right browser..... " +browserName);
+				Log.error("Please Pass the right browser..... : " +browserName);
 				throw new BrowserException("No browser Found.... " +browserName);
 		}
 		driver.manage().deleteAllCookies();
