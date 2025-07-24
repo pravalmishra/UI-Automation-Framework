@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.qa.crm2.base.BaseTest;
 import com.qa.crm2.constants.AppConstants;
+import com.qa.crm2.errors.AppError;
 
 public class LoginPageTest extends BaseTest {
 
@@ -12,7 +13,7 @@ public class LoginPageTest extends BaseTest {
 	public void loginPageTitleTest() {
 		String accTitle = loginpage.getLoginPageTitle();
 		//Assert.assertEquals(accTitle, "Account Login");
-		Assert.assertEquals(accTitle, AppConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(accTitle, AppConstants.LOGIN_PAGE_TITLE, AppError.TITLE_NOT_FOUND);
 
 	}
 

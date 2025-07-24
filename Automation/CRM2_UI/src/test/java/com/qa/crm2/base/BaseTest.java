@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
+import com.beust.jcommander.Parameter;
 import com.qa.crm2.factory.DriverFactory;
 import com.qa.crm2.pages.AccountsPage;
 import com.qa.crm2.pages.AddToCartPage;
@@ -30,14 +31,16 @@ public class BaseTest {
 	protected RegisterationPage registerationPage;
 	
 	
-	
+	@Parameters({"browser"})
 	@BeforeTest
-	public void setup(){
+	public void setup(String browserName){
 		df = new DriverFactory();
 	  prop = df.initProp();
+	  
+	  if(browserName!=null) {
+		  prop.setProperty("browser", browserName);
+	  }
     driver = df.initDriver(prop);
-    
-	
     loginpage = new LoginPage(driver);
     softAssert = new SoftAssert();
 	}

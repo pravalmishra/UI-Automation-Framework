@@ -17,22 +17,26 @@ public class DriverFactory {
 	 
 	WebDriver driver;
 	Properties prop;
+	OptionsManager optionsManager;
+	public static String highlight;
 	
 	public WebDriver initDriver(Properties prop) {
 		
 		String browserName = prop.getProperty("browser");
+		highlight = prop.getProperty("highlight");
+		optionsManager = new OptionsManager(prop);
 		switch(browserName.toLowerCase().trim()) {
 		
 		case "chrome":
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(optionsManager.getChromeOptions());
 			
 			break;
 		case "firefox":
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(optionsManager.getFirefoxOptions());
 			break;
 			
 		case "edge":
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(optionsManager.getEdgeOptions());
 			break;
 		
 		case "safari":

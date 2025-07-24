@@ -79,15 +79,15 @@ public class ElementUtil {
 
 	}
 
-//	private void checkHighlight(WebElement element) {
-//		if (Boolean.parseBoolean(DriverFactory.highlight)) {
-//			jsUtil.flash(element);
-//		}
-//	}
+	private void checkHighlight(WebElement element) {
+		if (Boolean.parseBoolean(DriverFactory.highlight)) {
+			jsUtil.flash(element);
+		}
+	}
 
 	public WebElement getElement(String locatorType, String locatorValue) {
 		WebElement element =  driver.findElement(getBy(locatorType, locatorValue));
-		//checkHighlight(element);
+		checkHighlight(element);
 		return element;
 		
 	}
@@ -99,7 +99,7 @@ public class ElementUtil {
 
 		try {
 			element = driver.findElement(locator);
-			//checkHighlight(element);
+			checkHighlight(element);
 		} catch (NoSuchElementException e) {
 			System.out.println("Element is not present on the page");
 			e.printStackTrace();
@@ -367,7 +367,7 @@ public class ElementUtil {
 	public void clickWhenReady(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-		//checkHighlight(element);
+		checkHighlight(element);
 		element.click();
 	}
 
@@ -382,7 +382,7 @@ public class ElementUtil {
 	public WebElement waitForElementPresence(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		WebElement element =  wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		//checkHighlight(element);
+		checkHighlight(element);
 		return element;
 	}
 
@@ -399,14 +399,14 @@ public class ElementUtil {
 	public WebElement waitForElementVisible(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		WebElement element =  wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		//checkHighlight(element);
+		checkHighlight(element);
 		return element;
 	}
 
 	public WebElement waitForElementVisible(By locator, int timeOut, int intervalTime) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofSeconds(intervalTime));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		//checkHighlight(element);
+		checkHighlight(element);
 		return element;
 	}
 
@@ -570,7 +570,7 @@ public class ElementUtil {
 			throw new ElementException("No Such Element");
 		}
 		
-		//checkHighlight(element);		
+		checkHighlight(element);		
 		return element;
 
 	}
@@ -599,7 +599,7 @@ public class ElementUtil {
 					+ intervalTime + " seconds...");
 			throw new ElementException("No Such Element");
 		}
-		//checkHighlight(element);
+		checkHighlight(element);
 		return element;
 
 	}

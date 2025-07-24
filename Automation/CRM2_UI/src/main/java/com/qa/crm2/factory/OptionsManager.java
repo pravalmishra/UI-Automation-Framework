@@ -28,6 +28,7 @@ package com.qa.crm2.factory;
 			}
 			if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
 				//Log.info("Running chrome in incognito mode");
+				System.out.println("Incognito Mode");
 				co.addArguments("--incognito");
 			}
 
