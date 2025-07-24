@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="84.606" tests="34" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/pravalmishra/Downloads/apache-maven-3.9.6/boot/plexus-classworlds-2.7.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="maven.conf" value="/Users/pravalmishra/Downloads/apache-maven-3.9.6/conf"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Denv=stage"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Users/pravalmishra/Downloads/apache-maven-3.9.6"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/pravalmishra"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
+    <property name="user.name" value="pravalmishra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/c6/3l582mb97j5g39p7sx8wptj80000gp/T/"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="/Users/pravalmishra/Automation/CRM2_UI"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/pravalmishra/Automation/CRM2_UI"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value="stage"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/pravalmishra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="classworlds.conf" value="/Users/pravalmishra/Downloads/apache-maven-3.9.6/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/Users/pravalmishra/Downloads/apache-maven-3.9.6/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="accPageHeadersTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.243"/>
+  <testcase name="accPageTitleTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.115"/>
+  <testcase name="accPageURLTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.012"/>
+  <testcase name="isLogoutLinkExistTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.385"/>
+  <testcase name="isMyAccountLinkExistTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.324"/>
+  <testcase name="searchTest" classname="com.qa.crm2.tests.AccountsPageTest" time="0.348"/>
+  <testcase name="forgotPwdLinkExistTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.393"/>
+  <testcase name="forgotPwdLinkExistTest" classname="com.qa.crm2.tests.LoginPageTest" time="1.427"/>
+  <testcase name="loginPageTitleTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.025"/>
+  <testcase name="loginPageTitleTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.028"/>
+  <testcase name="loginPageUrlTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.056"/>
+  <testcase name="loginPageUrlTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.027"/>
+  <testcase name="loginTest" classname="com.qa.crm2.tests.LoginPageTest" time="0.409"/>
+  <testcase name="loginTest" classname="com.qa.crm2.tests.LoginPageTest" time="1.66"/>
+  <testcase name="addToCartPageTitleTest" classname="com.qa.crm2.tests.AddToCartPageTest" time="2.003">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;shopping cart&apos;] (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:12449, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 28091, moz:profile: /var/folders/c6/3l582mb97j5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12449/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ebdfb3c6-7355-4114-a2b6-fcde7ec728da" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:12449, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 28091, moz:profile: /var/folders/c6/3l582mb97j5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12449/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ebdfb3c6-7355-4114-a2b6-fcde7ec728da
+	at com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest(AddToCartPageTest.java:21)
+</failure>
+  </testcase>
+  <testcase name="searchResultsCountTest" classname="com.qa.crm2.tests.SearchResultsTest" time="2.623"/>
+  <testcase name="searchResultsCountTest" classname="com.qa.crm2.tests.SearchResultsTest" time="1.577"/>
+  <testcase name="searchResultsCountTest" classname="com.qa.crm2.tests.SearchResultsTest" time="0.16"/>
+  <testcase name="addItemTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="0.341"/>
+  <testcase name="productHeaderTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="2.025"/>
+  <testcase name="productHeaderTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.136"/>
+  <testcase name="productHeaderTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.422"/>
+  <testcase name="productHeaderTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.023"/>
+  <testcase name="searchResultsTest" classname="com.qa.crm2.tests.SearchResultsTest" time="1.427"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="2.567"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.985"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="4.424"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="5.972"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.972"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.33"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.551"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="2.973"/>
+  <testcase name="productImagesCountTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="4.359"/>
+  <testcase name="productInfoTest" classname="com.qa.crm2.tests.ProductPageInfoTest" time="3.527"/>
+</testsuite>
