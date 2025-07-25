@@ -4,6 +4,12 @@
 <suite name="Open Cart Regression Suite" verbose="3" thread-count="6" parallel="tests">
 
 
+<listeners>
+   <listener class-name="com.qa.crm2.listeners.ExtentReportListener" />
+   <!-- <listener class-name="com.qa.opencart.listeners.TestAllureListener" />
+     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer" /> -->
+</listeners>
+
 	<test name="Login Page Test">
       <parameter name="browser" value="chrome"></parameter>
   
@@ -13,7 +19,7 @@
 		</classes>
 	</test>
 	
-	<test name="Login Page Test Firefox">
+<!--	<test name="Login Page Test Firefox">
       <parameter name="browser" value="firefox"></parameter>
   
 		<classes>
@@ -51,7 +57,7 @@
 		</classes>
 	</test>
 
-	<!-- <test name="Register Page Test">
+	<test name="Register Page Test">
 	
 		<classes>
 			<class name="com.qa.crm2.tests.RegPageTest" />

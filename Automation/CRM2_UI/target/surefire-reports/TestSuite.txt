@@ -1,14 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 34, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 84.606 s <<< FAILURE! - in TestSuite
-addToCartPageTitleTest(com.qa.crm2.tests.AddToCartPageTest)  Time elapsed: 2.003 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
+Tests run: 34, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 82.747 s <<< FAILURE! - in TestSuite
+setup(com.qa.crm2.tests.LoginPageTest)  Time elapsed: 8.236 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Error: NS_ERROR_CONNECTION_REFUSED 
+Host info: host: 'LP-000873.local', ip: 'fe80:0:0:0:1437:4635:2f3f:a125%en0'
 Build info: version: '4.19.0', revision: '5f9cec8963'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:12449, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 28091, moz:profile: /var/folders/c6/3l582mb97j5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12449/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ebdfb3c6-7355-4114-a2b6-fcde7ec728da
-	at com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest(AddToCartPageTest.java:21)
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {args: [--incognito], binary: /Applications/Firefox.app/C...}}]}]
+
+forgotPwdLinkExistTest(com.qa.crm2.tests.LoginPageTest)  Time elapsed: 0.058 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because the return value of "com.qa.crm2.factory.DriverFactory.getDriver()" is null
 

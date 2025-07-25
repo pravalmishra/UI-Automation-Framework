@@ -1,14 +1,18 @@
 package com.qa.crm2.factory;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.qa.crm2.exceptions.BrowserException;
@@ -23,6 +27,8 @@ public class DriverFactory {
 	OptionsManager optionsManager;
 	public static String highlight;
 	
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+	
 	public WebDriver initDriver(Properties prop) {
 		
 		String browserName = prop.getProperty("browser");
@@ -34,15 +40,18 @@ public class DriverFactory {
 		switch(browserName.toLowerCase().trim()) {
 		
 		case "chrome":
-			driver = new ChromeDriver(optionsManager.getChromeOptions());
+			//driver = new ChromeDriver(optionsManager.getChromeOptions());
+			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 			
 			break;
 		case "firefox":
-			driver = new FirefoxDriver(optionsManager.getFirefoxOptions());
+			//driver = new FirefoxDriver(optionsManager.getFirefoxOptions());
+			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 			break;
 			
 		case "edge":
-			driver = new EdgeDriver(optionsManager.getEdgeOptions());
+			//driver = new EdgeDriver(optionsManager.getEdgeOptions());
+			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 			break;
 		
 		case "safari":
@@ -54,11 +63,15 @@ public class DriverFactory {
 				Log.error("Please Pass the right browser..... : " +browserName);
 				throw new BrowserException("No browser Found.... " +browserName);
 		}
-		driver.manage().deleteAllCookies();
+		getDriver().manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
+		getDriver().get(prop.getProperty("url"));
 		
-		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url"));
-		return driver;
+		return getDriver();
+	}
+	
+	public static WebDriver getDriver() {
+		return tlDriver.get();
 	}
 	
 	public Properties initProp() {
@@ -124,4 +137,28 @@ public class DriverFactory {
 		return prop;
 
 	}
+	
+	/**
+	 * take screenshot
+	 */
+	
+	public static String getScreenshot(String methodName) {
+	    String screenshotDir = System.getProperty("user.dir") + "/screenshot/";
+	    new File(screenshotDir).mkdirs(); // ensure directory exists
+
+	    File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+	    String path = screenshotDir + methodName + "_" + System.currentTimeMillis() + ".png";
+	    File destination = new File(path);
+
+	    try {
+	        FileHandler.copy(srcFile, destination);
+	    } catch (IOException e) {
+	        System.err.println("Failed to save screenshot: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+
+	    return path;
+	}
+
+	
 	}

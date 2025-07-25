@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="23" failed="1" skipped="0">
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-24T14:06:53 IST" name="Open Cart Regression Suite" finished-at="2025-07-24T14:08:16 IST" duration-ms="82819">
+  <suite started-at="2025-07-25T08:50:41 IST" name="Open Cart Regression Suite" finished-at="2025-07-25T08:52:01 IST" duration-ms="80492">
     <groups>
     </groups>
-    <test started-at="2025-07-24T14:06:53 IST" name="Login Page Test" finished-at="2025-07-24T14:07:22 IST" duration-ms="28418">
-      <class name="com.qa.crm2.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:06:53 IST" name="setup" finished-at="2025-07-24T14:07:15 IST" duration-ms="21871" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:07:15 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-24T14:07:17 IST" duration-ms="1430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:07:17 IST" name="loginPageTitleTest" finished-at="2025-07-24T14:07:17 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageUrlTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:07:17 IST" name="loginPageUrlTest" finished-at="2025-07-24T14:07:17 IST" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageUrlTest -->
-        <test-method signature="loginTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:07:17 IST" name="loginTest" finished-at="2025-07-24T14:07:21 IST" duration-ms="4906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@456abb66]" started-at="2025-07-24T14:07:22 IST" name="tearDown" finished-at="2025-07-24T14:07:22 IST" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
-    </test> <!-- Login Page Test -->
-    <test started-at="2025-07-24T14:06:53 IST" name="Add To Cart Page Test" finished-at="2025-07-24T14:07:22 IST" duration-ms="29037">
-      <class name="com.qa.crm2.tests.AddToCartPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@7de4a01f]" started-at="2025-07-24T14:06:53 IST" name="setup" finished-at="2025-07-24T14:07:08 IST" duration-ms="14778" status="PASS">
+    <test started-at="2025-07-25T08:50:41 IST" name="Accounts Page Test" finished-at="2025-07-25T08:50:58 IST" duration-ms="17605">
+      <class name="com.qa.crm2.tests.AccountsPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:41 IST" name="setup" finished-at="2025-07-25T08:50:51 IST" duration-ms="10361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,68 +18,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="infoAddToCartSetup()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@7de4a01f]" started-at="2025-07-24T14:07:08 IST" name="infoAddToCartSetup" finished-at="2025-07-24T14:07:11 IST" duration-ms="2564" status="PASS">
+        <test-method is-config="true" signature="accSetup()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:51 IST" name="accSetup" finished-at="2025-07-25T08:50:54 IST" duration-ms="3557" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- infoAddToCartSetup -->
-        <test-method signature="addToCartPageTitleTest()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@7de4a01f]" started-at="2025-07-24T14:07:11 IST" name="addToCartPageTitleTest" finished-at="2025-07-24T14:07:22 IST" duration-ms="11262" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:12449, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 28091, moz:profile: /var/folders/c6/3l582mb97j5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12449/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ebdfb3c6-7355-4114-a2b6-fcde7ec728da]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='shopping cart'] (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.19.0', revision: '5f9cec8963'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.5', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0, moz:accessibilityChecks: false, moz:buildID: 20221208122842, moz:debuggerAddress: 127.0.0.1:12449, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 28091, moz:profile: /var/folders/c6/3l582mb97j5..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:12449/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ebdfb3c6-7355-4114-a2b6-fcde7ec728da
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.qa.crm2.utils.ElementUtil.waitForElementVisible(ElementUtil.java:401)
-at com.qa.crm2.pages.ProductInfoPage.addToCart(ProductInfoPage.java:93)
-at com.qa.crm2.tests.AddToCartPageTest.addToCartPageTitleTest(AddToCartPageTest.java:21)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- accSetup -->
+        <test-method signature="accPageHeadersTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:54 IST" name="accPageHeadersTest" finished-at="2025-07-25T08:50:55 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCartPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@7de4a01f]" started-at="2025-07-24T14:07:22 IST" name="tearDown" finished-at="2025-07-24T14:07:22 IST" duration-ms="388" status="PASS">
+        </test-method> <!-- accPageHeadersTest -->
+        <test-method signature="accPageTitleTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:55 IST" name="accPageTitleTest" finished-at="2025-07-25T08:50:55 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accPageTitleTest -->
+        <test-method signature="accPageURLTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:55 IST" name="accPageURLTest" finished-at="2025-07-25T08:50:55 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accPageURLTest -->
+        <test-method signature="isLogoutLinkExistTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:55 IST" name="isLogoutLinkExistTest" finished-at="2025-07-25T08:50:55 IST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLogoutLinkExistTest -->
+        <test-method signature="isMyAccountLinkExistTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:55 IST" name="isMyAccountLinkExistTest" finished-at="2025-07-25T08:50:55 IST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isMyAccountLinkExistTest -->
+        <test-method signature="searchTest()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:55 IST" name="searchTest" finished-at="2025-07-25T08:50:57 IST" duration-ms="1969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.AccountsPageTest@329a1f8d]" started-at="2025-07-25T08:50:57 IST" name="tearDown" finished-at="2025-07-25T08:50:58 IST" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.crm2.tests.AddToCartPageTest -->
-    </test> <!-- Add To Cart Page Test -->
-    <test started-at="2025-07-24T14:06:53 IST" name="Search Results Page Test" finished-at="2025-07-24T14:07:28 IST" duration-ms="34900">
-      <class name="com.qa.crm2.tests.SearchResultsTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:06:53 IST" name="setup" finished-at="2025-07-24T14:07:14 IST" duration-ms="20308" status="PASS">
+      </class> <!-- com.qa.crm2.tests.AccountsPageTest -->
+    </test> <!-- Accounts Page Test -->
+    <test started-at="2025-07-25T08:50:41 IST" name="Login Page Test" finished-at="2025-07-25T08:51:02 IST" duration-ms="21253">
+      <class name="com.qa.crm2.tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:50:41 IST" name="setup" finished-at="2025-07-25T08:50:54 IST" duration-ms="13963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,11 +65,73 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="searchResultsSetup()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:14 IST" name="searchResultsSetup" finished-at="2025-07-24T14:07:20 IST" duration-ms="6284" status="PASS">
+        <test-method signature="forgotPwdLinkExistTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:50:55 IST" name="forgotPwdLinkExistTest" finished-at="2025-07-25T08:50:56 IST" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdLinkExistTest -->
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:50:56 IST" name="loginPageTitleTest" finished-at="2025-07-25T08:50:56 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method signature="loginPageUrlTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:50:56 IST" name="loginPageUrlTest" finished-at="2025-07-25T08:50:56 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageUrlTest -->
+        <test-method signature="loginTest()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:50:56 IST" name="loginTest" finished-at="2025-07-25T08:51:02 IST" duration-ms="5731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.LoginPageTest@53ed09e8]" started-at="2025-07-25T08:51:02 IST" name="tearDown" finished-at="2025-07-25T08:51:02 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test started-at="2025-07-25T08:50:41 IST" name="Add To Cart Page Test" finished-at="2025-07-25T08:51:02 IST" duration-ms="21873">
+      <class name="com.qa.crm2.tests.AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@3f685162]" started-at="2025-07-25T08:50:41 IST" name="setup" finished-at="2025-07-25T08:50:51 IST" duration-ms="10361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="infoAddToCartSetup()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@3f685162]" started-at="2025-07-25T08:50:51 IST" name="infoAddToCartSetup" finished-at="2025-07-25T08:50:54 IST" duration-ms="3258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infoAddToCartSetup -->
+        <test-method signature="addToCartPageTitleTest()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@3f685162]" started-at="2025-07-25T08:50:54 IST" name="addToCartPageTitleTest" finished-at="2025-07-25T08:51:02 IST" duration-ms="7781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.AddToCartPageTest@3f685162]" started-at="2025-07-25T08:51:02 IST" name="tearDown" finished-at="2025-07-25T08:51:02 IST" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.crm2.tests.AddToCartPageTest -->
+    </test> <!-- Add To Cart Page Test -->
+    <test started-at="2025-07-25T08:50:41 IST" name="Search Results Page Test" finished-at="2025-07-25T08:51:11 IST" duration-ms="30124">
+      <class name="com.qa.crm2.tests.SearchResultsTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:50:41 IST" name="setup" finished-at="2025-07-25T08:50:55 IST" duration-ms="14782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="searchResultsSetup()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:50:55 IST" name="searchResultsSetup" finished-at="2025-07-25T08:51:01 IST" duration-ms="6093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsSetup -->
-        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:20 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-24T14:07:22 IST" duration-ms="2630" status="PASS">
+        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:51:01 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-25T08:51:05 IST" duration-ms="3149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +147,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsCountTest -->
-        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:22 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-24T14:07:24 IST" duration-ms="1922" status="PASS">
+        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:51:05 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-25T08:51:06 IST" duration-ms="1773" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +163,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsCountTest -->
-        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:24 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-24T14:07:27 IST" duration-ms="2191" status="PASS">
+        <test-method signature="searchResultsCountTest(java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:51:06 IST" name="searchResultsCountTest" data-provider="getProductCountData" finished-at="2025-07-25T08:51:08 IST" duration-ms="1677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,19 +179,19 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsCountTest -->
-        <test-method signature="searchResultsTest()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:27 IST" name="searchResultsTest" finished-at="2025-07-24T14:07:28 IST" duration-ms="1426" status="PASS">
+        <test-method signature="searchResultsTest()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:51:08 IST" name="searchResultsTest" finished-at="2025-07-25T08:51:11 IST" duration-ms="2460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@60e949e1]" started-at="2025-07-24T14:07:28 IST" name="tearDown" finished-at="2025-07-24T14:07:28 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.SearchResultsTest@bbf9e07]" started-at="2025-07-25T08:51:11 IST" name="tearDown" finished-at="2025-07-25T08:51:11 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.crm2.tests.SearchResultsTest -->
     </test> <!-- Search Results Page Test -->
-    <test started-at="2025-07-24T14:06:53 IST" name="Product Info Page Test" finished-at="2025-07-24T14:08:16 IST" duration-ms="82819">
+    <test started-at="2025-07-25T08:50:41 IST" name="Product Info Page Test" finished-at="2025-07-25T08:52:01 IST" duration-ms="80492">
       <class name="com.qa.crm2.tests.ProductPageInfoTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:06:53 IST" name="setup" finished-at="2025-07-24T14:07:07 IST" duration-ms="13887" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:50:41 IST" name="setup" finished-at="2025-07-25T08:50:54 IST" duration-ms="13810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,15 +202,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="infoPageSetup()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:07 IST" name="infoPageSetup" finished-at="2025-07-24T14:07:12 IST" duration-ms="4509" status="PASS">
+        <test-method is-config="true" signature="infoPageSetup()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:50:54 IST" name="infoPageSetup" finished-at="2025-07-25T08:51:01 IST" duration-ms="6854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- infoPageSetup -->
-        <test-method signature="addItemTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:12 IST" name="addItemTest" finished-at="2025-07-24T14:07:23 IST" duration-ms="11188" status="PASS">
+        <test-method signature="addItemTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:01 IST" name="addItemTest" finished-at="2025-07-25T08:51:10 IST" duration-ms="8311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:23 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-24T14:07:26 IST" duration-ms="3603" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:10 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-25T08:51:13 IST" duration-ms="3512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -224,7 +226,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:26 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-24T14:07:30 IST" duration-ms="3300" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:13 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-25T08:51:16 IST" duration-ms="3266" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,7 +242,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:30 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-24T14:07:33 IST" duration-ms="3422" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:16 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-25T08:51:19 IST" duration-ms="2979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -256,7 +258,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:33 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-24T14:07:36 IST" duration-ms="3026" status="PASS">
+        <test-method signature="productHeaderTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:19 IST" name="productHeaderTest" data-provider="getProductSearchData" finished-at="2025-07-25T08:51:22 IST" duration-ms="3019" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,91 +274,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productHeaderTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:36 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-24T14:07:39 IST" duration-ms="2568" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[macbook]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MacBook Pro]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:39 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-24T14:07:43 IST" duration-ms="3986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[iMac]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:43 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-24T14:07:47 IST" duration-ms="4424" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Samsung SyncMaster 941BW]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:47 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-24T14:07:53 IST" duration-ms="5976" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Samsung Galaxy Tab 10.1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:54 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-24T14:07:58 IST" duration-ms="3980" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:22 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-25T08:51:25 IST" duration-ms="2712" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -377,7 +295,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:07:58 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-24T14:08:01 IST" duration-ms="3331" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:25 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-25T08:51:28 IST" duration-ms="2711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -398,7 +316,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:08:02 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-24T14:08:05 IST" duration-ms="3555" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:28 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-25T08:51:31 IST" duration-ms="2930" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -419,7 +337,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:08:05 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-24T14:08:08 IST" duration-ms="2972" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:31 IST" name="productImagesCountTest" data-provider="getProductImagesData" finished-at="2025-07-25T08:51:38 IST" duration-ms="7689" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,7 +358,91 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:08:08 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-24T14:08:12 IST" duration-ms="4363" status="PASS">
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:39 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-25T08:51:44 IST" duration-ms="5003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macbook]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MacBook Pro]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:44 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-25T08:51:48 IST" duration-ms="4161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:48 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-25T08:51:52 IST" duration-ms="3334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung SyncMaster 941BW]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:52 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-25T08:51:54 IST" duration-ms="2768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung Galaxy Tab 10.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productImagesCountTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:54 IST" name="productImagesCountTest" data-provider="getProductImagesDataFromExcel" finished-at="2025-07-25T08:51:58 IST" duration-ms="3191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -461,11 +463,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productInfoTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:08:12 IST" name="productInfoTest" finished-at="2025-07-24T14:08:16 IST" duration-ms="3526" status="PASS">
+        <test-method signature="productInfoTest()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:51:58 IST" name="productInfoTest" finished-at="2025-07-25T08:52:01 IST" duration-ms="3247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productInfoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@5bdaf2ce]" started-at="2025-07-24T14:08:16 IST" name="tearDown" finished-at="2025-07-24T14:08:16 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.crm2.tests.ProductPageInfoTest@396ef8b2]" started-at="2025-07-25T08:52:01 IST" name="tearDown" finished-at="2025-07-25T08:52:01 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

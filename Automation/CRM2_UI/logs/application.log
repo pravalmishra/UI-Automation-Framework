@@ -1,6 +1,1 @@
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-4] Browser name is : chrome
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Browser name is : chrome
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-6] Browser name is : firefox
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-2] Browser name is : firefox
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-3] Browser name is : firefox
-2025-07-24 19:12:52,336 INFO com.qa.crm2.logger.Log [TestNG-tests-5] Browser name is : chrome
+2025-07-25 09:23:24,245 INFO com.qa.crm2.logger.Log [TestNG-tests-1] Browser name is : chrome
