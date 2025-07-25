@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Open Cart Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 25, 2025 09:23:22 am</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2025 11:36:33 am</span></a>
 </li>
 </ul>
 </div>
@@ -78,6 +78,7 @@
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,7 +86,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">OpenCartRegressionSuite</a>
+<a class="dropdown-item" href="#">OpenCartRegressionSuite</a><a class="dropdown-item" href="#">LoginPageTest</a>
 </ul>
 </li>
 </ul>
@@ -98,7 +99,7 @@
           <div class="test-detail">
             <p class="name">forgotPwdLinkExistTest</p>
             <p class="text-sm">
-              <span>9:23:35 am</span> / <span>00:00:00:749</span>
+              <span>11:36:48 am</span> / <span>00:00:00:554</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -107,9 +108,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">forgotPwdLinkExistTest</h5>
-<span class='badge badge-success'>07.25.2025 9:23:35 am</span>
-<span class='badge badge-danger'>07.25.2025 9:23:35 am</span>
-<span class='badge badge-default'>00:00:00:749</span>
+<span class='badge badge-success'>07.25.2025 11:36:48 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:48 am</span>
+<span class='badge badge-default'>00:00:00:554</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -124,7 +125,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:23:36 am</td>
+        <td>11:36:48 am</td>
         <td>
           Test passed
         </td>
@@ -134,25 +135,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
             <p class="name">loginPageTitleTest</p>
             <p class="text-sm">
-              <span>9:23:36 am</span> / <span>00:00:02:192</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:36:48 am</span> / <span>00:00:02:135</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginPageTitleTest</h5>
-<span class='badge badge-success'>07.25.2025 9:23:36 am</span>
-<span class='badge badge-danger'>07.25.2025 9:23:38 am</span>
-<span class='badge badge-default'>00:00:02:192</span>
+<h5 class="test-status text-skip">loginPageTitleTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:48 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:51 am</span>
+<span class='badge badge-default'>00:00:02:135</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -166,22 +167,22 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:23:38 am</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:51 am</td>
         <td>
-          Test failed
+          Test skipped
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:23:38 am</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:51 am</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:16)
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -206,7 +207,7 @@
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753415618612.png' src="/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753415618612.png">
+<img data-featherlight='/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423611382.png' src="/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423611382.png">
     <div class="title">loginPageTitleTest</div>
     </div></div>
         </td>
@@ -216,25 +217,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageUrlTest</p>
+            <p class="name">loginPageTitleTest</p>
             <p class="text-sm">
-              <span>9:23:38 am</span> / <span>00:00:00:022</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:36:51 am</span> / <span>00:00:02:082</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginPageUrlTest</h5>
-<span class='badge badge-success'>07.25.2025 9:23:38 am</span>
-<span class='badge badge-danger'>07.25.2025 9:23:38 am</span>
-<span class='badge badge-default'>00:00:00:022</span>
+<h5 class="test-status text-skip">loginPageTitleTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:51 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:53 am</span>
+<span class='badge badge-default'>00:00:02:082</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -248,10 +249,49 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:23:38 am</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:53 am</td>
         <td>
-          Test passed
+          Test skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:53 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423613675.png' src="/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423613675.png">
+    <div class="title">loginPageTitleTest</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -259,25 +299,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="skip" test-id="4"
           author=""
           tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginTest</p>
+            <p class="name">loginPageTitleTest</p>
             <p class="text-sm">
-              <span>9:23:38 am</span> / <span>00:00:02:452</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>11:36:53 am</span> / <span>00:00:02:093</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginTest</h5>
-<span class='badge badge-success'>07.25.2025 9:23:38 am</span>
-<span class='badge badge-danger'>07.25.2025 9:23:41 am</span>
-<span class='badge badge-default'>00:00:02:452</span>
+<h5 class="test-status text-skip">loginPageTitleTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:53 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:55 am</span>
+<span class='badge badge-default'>00:00:02:093</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -291,8 +331,215 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:55 am</td>
+        <td>
+          Test skipped
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:36:55 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423615963.png' src="/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423615963.png">
+    <div class="title">loginPageTitleTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="OpenCartRegressionSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginPageTitleTest</p>
+            <p class="text-sm">
+              <span>11:36:55 am</span> / <span>00:00:02:107</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">loginPageTitleTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:55 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:58 am</span>
+<span class='badge badge-default'>00:00:02:107</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:36:58 am</td>
+        <td>
+          Test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:36:58 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: =====PAGE TITLE NOT FOUND===== expected [Account Login1] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.qa.crm2.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423618266.png' src="/Users/pravalmishra/Automation/CRM2_UI/screenshot/loginPageTitleTest_1753423618266.png">
+    <div class="title">loginPageTitleTest</div>
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="OpenCartRegressionSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginPageUrlTest</p>
+            <p class="text-sm">
+              <span>11:36:58 am</span> / <span>00:00:00:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginPageUrlTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:58 am</span>
+<span class='badge badge-danger'>07.25.2025 11:36:58 am</span>
+<span class='badge badge-default'>00:00:00:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:23:41 am</td>
+        <td>11:36:58 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="OpenCartRegressionSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>11:36:58 am</span> / <span>00:00:02:432</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>07.25.2025 11:36:58 am</span>
+<span class='badge badge-danger'>07.25.2025 11:37:01 am</span>
+<span class='badge badge-default'>00:00:02:432</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:37:01 am</td>
         <td>
           Test passed
         </td>
@@ -323,14 +570,16 @@
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -341,11 +590,32 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:23:36 am</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:48 am</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:51 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:53 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:36:55 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginPageTitleTest</a>
 </td>
 </tr>
 </tbody>
@@ -373,15 +643,17 @@
 <span class="meta">
 <span class='badge log pass-bg'>3</span>
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
-<p class="name">LoginPageTest</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">OpenCartRegressionSuite</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>LoginPageTest</h4>
+<h4>OpenCartRegressionSuite</h4>
 <span status="pass" class='badge log pass-bg'>3 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -394,30 +666,51 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:35 am</td>
+<td>11:36:48 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>forgotPwdLinkExistTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:23:36 am</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:48 am</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:38 am</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:51 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>loginPageUrlTest</a>
+<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:53 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:36:55 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:38 am</td>
+<td>11:36:58 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>loginTest</a>
+<a href="#" class="linked" test-id='6' id='6'>loginPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:36:58 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>loginTest</a>
 </td>
 </tr>
 </tbody>
@@ -429,15 +722,17 @@
 <span class="meta">
 <span class='badge log pass-bg'>3</span>
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
-<p class="name">OpenCartRegressionSuite</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">LoginPageTest</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>OpenCartRegressionSuite</h4>
+<h4>LoginPageTest</h4>
 <span status="pass" class='badge log pass-bg'>3 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -450,30 +745,51 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:35 am</td>
+<td>11:36:48 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>forgotPwdLinkExistTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>09:23:36 am</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:48 am</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>loginPageTitleTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:38 am</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:51 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>loginPageUrlTest</a>
+<a href="#" class="linked" test-id='3' id='3'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:53 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:36:55 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>loginPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>09:23:38 am</td>
+<td>11:36:58 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>loginTest</a>
+<a href="#" class="linked" test-id='6' id='6'>loginPageUrlTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:36:58 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>loginTest</a>
 </td>
 </tr>
 </tbody>
@@ -493,13 +809,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 25, 2025 09:23:22 am</h3>
+<h3>Jul 25, 2025 11:36:33 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 25, 2025 09:23:41 am</h3>
+<h3>Jul 25, 2025 11:37:01 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -527,13 +843,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='75%'>
+<div><small data-tooltip='42%'>
 <b>3</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='25%'><b>1</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='14%'><b>1</b> tests failed,
+<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -550,10 +866,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'><b>3</b> events passed</small></div>
+<div><small data-tooltip='27%'><b>3</b> events passed</small></div>
 <div>
-<small data-tooltip='40%'><b>2</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='18%'><b>2</b> events failed,
+<b data-tooltip='%'>6</b> others
 </small>
 </div>
 </div>
@@ -569,7 +885,7 @@
 </div></div>
 <script>
 var timeline = {
-"forgotPwdLinkExistTest":0.749,"loginPageTitleTest":2.192,"loginPageUrlTest":0.022,"loginTest":2.452
+"forgotPwdLinkExistTest":0.554,"loginPageTitleTest":2.135,"loginPageTitleTest":2.082,"loginPageTitleTest":2.093,"loginPageTitleTest":2.107,"loginPageUrlTest":0.056,"loginTest":2.432
 };
 </script>
 <div class="row">
@@ -579,20 +895,20 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>LoginPageTest</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>75%</td>
-</tr>
-<tr>
 <td>OpenCartRegressionSuite</td>
 <td>3</td>
 <td>1</td>
+<td>3</td>
 <td>0</td>
+<td>42.857%</td>
+</tr>
+<tr>
+<td>LoginPageTest</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
 <td>0</td>
-<td>75%</td>
+<td>42.857%</td>
 </tr>
 </tbody>
 </table></div>
@@ -640,7 +956,7 @@ parentCount: 5,
 passParent: 3,
 failParent: 1,
 warningParent: 0,
-skipParent: 0,
+skipParent: 3,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -657,7 +973,7 @@ eventsCount: 5,
 passEvents: 3,
 failEvents: 2,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 6,
 infoEvents: 0
 };
 </script>        </div>

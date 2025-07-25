@@ -7,6 +7,7 @@ import com.qa.crm2.constants.AppConstants;
 import com.qa.crm2.utils.ElementUtil;
 import com.qa.crm2.pages.RegisterationPage;
 import com.qa.crm2.utils.TimeUtil;
+import com.qa.crm2.logger.Log;
 
 import io.qameta.allure.Step;
 
@@ -27,13 +28,16 @@ public class LoginPage {
 		eleUtil = new ElementUtil(driver);
 	}
 
+	@Step("Getting Login Page Title...")
 	public String getLoginPageTitle() {
 		String title = eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, TimeUtil.DEFAULT_SHORT_TIME);
 		// String title = driver.getTitle();
+		Log.info("Login Page title :" +title);
 		System.out.println("login page title : " + title);
 		return title;
 	}
 
+	@Step("Getting Login Page Url...")
 	public String getLoginPageURL() {
 		// String url = driver.getCurrentUrl();
 		String url = eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL_FRACTION, 5);
@@ -42,12 +46,14 @@ public class LoginPage {
 
 	}
 
+	@Step("Getting the state of forgot pwd link...")
 	public boolean isForgotPwdLinkExist() {
 		// return driver.findElement(forgotPWdLink).isDisplayed();
 		return eleUtil.isElementDisplayed(forgotPWdLink);
 	}
-
-	public AccountsPage doLogin(String username, String pwd) {
+	
+	@Step("Login with username: {0} and Password: {1}")
+    public AccountsPage doLogin(String username, String pwd) {
 		System.out.println("user creds: " + username + " : " + pwd);
 //		driver.findElement(emailId).sendKeys(username);
 //		driver.findElement(password).sendKeys(pwd);
@@ -61,7 +67,7 @@ public class LoginPage {
 		return new AccountsPage(driver);
 	}
 	
-	
+	@Step("Navigating to registration page...")
 	public RegisterationPage navigateToRegisterPage() {
 		eleUtil.waitForElementVisible(registerLink, TimeUtil.DEFAULT_LONG_TIME).click();
 		return new RegisterationPage(driver);

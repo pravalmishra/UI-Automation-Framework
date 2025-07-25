@@ -17,6 +17,8 @@ import com.qa.crm2.pages.ProductInfoPage;
 import com.qa.crm2.pages.RegisterationPage;
 import com.qa.crm2.pages.SearchResultsPage;
 
+import io.qameta.allure.Step;
+
 public class BaseTest {
 	
 	WebDriver driver;
@@ -30,7 +32,7 @@ public class BaseTest {
 	protected AddToCartPage addToCartPage;
 	protected RegisterationPage registerationPage;
 	
-	
+	@Step("Launching {0} browser & init the properties")
 	@Parameters({"browser"})
 	@BeforeTest
 	public void setup(String browserName){
@@ -45,7 +47,7 @@ public class BaseTest {
     softAssert = new SoftAssert();
 	}
 	
-	
+	@Step("Closing the browser")
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
